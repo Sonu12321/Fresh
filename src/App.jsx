@@ -11,16 +11,16 @@ const App = () => {
 
     
 
-      <nav className="bg-gray-600 shadow">
+      <nav className="bg-gradient-to-r from-slate-700 to-neutral-700 shadow">
         <div className="max-w-4xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/Home" className="font-bold text-lg">Home</Link>
+          <Link to="/" className="px-3 py-2 bg-slate-500 rounded hover:bg-white">Home</Link>
           <div className="space-x-4">
-            <Link to="/favorites" className="px-3 py-2 rounded hover:bg-slate-100">Favorites</Link>
+            <Link to="/favorites" className="px-3 py-2 rounded bg-slate-500 hover:bg-slate-100">Favorites</Link>
           </div>
         </div>
       </nav>
     <Routes>
-      <Route path='/Home' element={<Home/>} /> 
+      <Route path='/' element={<Home/>} /> 
       <Route path='/book/works/:id' element={<BookDetails/>} /> 
       <Route path='/book/works/:id' element={<BookDetails/>} /> 
        <Route path="/favorites" element={<Favorites />} />

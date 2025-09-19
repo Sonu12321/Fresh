@@ -8,7 +8,7 @@ export default function Favorites() {
 
   if (entries.length === 0) {
     return (
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl  mt-5">
         <div className="bg-white border border-gray-100 rounded-xl shadow-sm p-12">
           <div className="text-center">
             <div className="mb-6">
@@ -16,13 +16,13 @@ export default function Favorites() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
               </svg>
             </div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-3">No favorites yet</h2>
+            <h2 className="text-xl font-semibold text-gray-900 mb-3 ">No favorites yet</h2>
             <p className="text-gray-500 mb-8 max-w-md mx-auto">
               Start building your personal library by adding books to your favorites. 
               Discover amazing books and keep track of the ones you love!
             </p>
             <Link 
-              to="/Home" 
+              to="/" 
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition-colors duration-200 shadow-sm hover:shadow-md"
             >
               <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -55,7 +55,7 @@ export default function Favorites() {
           
           <div className="text-right">
             <Link 
-              to="/Home" 
+              to="/" 
               className="inline-flex items-center text-sm text-gray-600 hover:text-blue-600 transition-colors duration-200"
             >
               <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,7 +150,7 @@ export default function Favorites() {
             Keep discovering amazing books and building your personal library!
           </p>
           <Link 
-            to="/Home" 
+            to="/" 
             className="inline-flex items-center px-6 py-2 bg-blue-600 text-white rounded-full text-sm font-medium hover:bg-blue-700 transition-colors duration-200"
           >
             <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
